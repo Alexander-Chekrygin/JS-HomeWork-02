@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>Classwork</title>
+    <style type="text/css">
+
+    </style>
+</head>
+<body>
+    <div id="one" >one</div>
+
+
+
+    <script>
+
+        var one = document.getElementById("one");
+            one.insertAdjacentHTML("afterend", "<div id='two'>two</div>")
+
+            var two = document.getElementById("two")
+
+            two.onclick = function addBlockAndRaname() {
+                two.insertAdjacentHTML("beforebegin", "<div id='two_first'>two_first</div>")
+                two.id = "two_second";
+            }
+
+
+
+    // Добавьте после дива с id=one еще один див с текстом two и id=two
+    // На клик по id=two добавьте перед ним див с id - two_first, а див с id=two измените на two_second 
+    </script>
+</body>
+</html>
